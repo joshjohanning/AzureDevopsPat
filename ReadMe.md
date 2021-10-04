@@ -1,3 +1,48 @@
+# My Notes
+
+Adding in my notes (@joshjohanning) from doing this
+
+> I tried that automated way to be able to manage PAT’s this morning.  It’s okay, but you need help from an AAD administrator to be able to register you an application to use and a few other settings applied.
+> 
+> I found some sample code (this repository) to take it one step further too by allowing you to impersonate another account, so I made like a service account and registered a PAT to it programmatically 
+> 
+> MSFT Public documentation: https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/manage-personal-access-tokens-via-api?view=azure-devops
+>
+> Blog post I followed: https://bw861987.medium.com/managing-azure-devops-pats-for-technical-users-via-nodejs-and-postman-6d2de9aea3a7 [ you can run in Postman to run examples, otherwise he has a NODE app you can run with examples ]
+> 
+> To run the guy’s app, you have to:
+>
+>1. Register an App in AAD; grab it’s client ID and client secret.  You will also need the tenant ID
+>1. Find a service account to use and know its username and password. There was nothing I had to do when the guy mentioned that you had to enable the password login with the account that was created, but a hybrid AAD might require that?
+> 1. clone this GitHub repo
+> 1. Make sure you have node installed
+> 1. `cd` into the git repo and run the setup/compile commands:
+```bash
+npm install  # install pre-reqs
+npm install -g typescript # install typescript
+tsc Code/main.ts # transcompile the typescript
+```
+> 6. Then you have to set up a few environment variables. I’m using Bash, so the EXPORT is my way of adding environment variables..
+```bash
+export AZURE_USERNAME="sa-azuredevopspat "
+export AZURE_PASSWORD=" "
+export AZURE_CLIENT_ID=" "
+export AZURE_TENANT_ID=" "
+export AZURE_CLIENT_SECRET=" "
+export AZURE_DEVOPS_ORG="soccerjoshj07"
+```
+> 7. Run the app
+```bash
+node Code/main.js # run the app
+```
+>
+> The Node app has examples of listing PAT’s (none here), creating a pat, updating a pat, then deleting a PAT:
+> ![image](https://user-images.githubusercontent.com/19912012/135923474-2c13d269-b5de-4bdb-907f-898e17b9519d.png)
+>
+> From Microsoft’s example , they have an example Python web app that you can use to look at example API calls – it uses your authentication instead of impersonating a service account.
+> ![image](https://user-images.githubusercontent.com/19912012/135922943-d6f16164-0716-4bfc-809f-05cc92815fae.png)
+> 
+
 # Automated Azure DevOps PAT management using a technical user - with no interaction from postman and nodejs
 ## What should be archived ?
 We are looking to use the new APIs announced [here](https://devblogs.microsoft.com/devops/personal-access-token-lifecycle-apis-now-publicly-available/) to manage PATs from technical users to e.g. rotate the PATs from our selfhosted Agents in Kubernetes, or to connect 3rd party software like SonarQube.
