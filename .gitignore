@@ -1,3 +1,6 @@
 Development/Kubernetes
 node_modules/
 Bin/
+**/*.js
+
+config_real.sh
