@@ -37,7 +37,8 @@ Adding in my notes (@joshjohanning) from doing this
 > To run the author’s app, you have to:
 >
 >1. Register an App in AAD; grab its client ID and client secret.  You will also need the tenant ID
->1. Find a service account to use and know its username and password. There was nothing I had to do when the original author mentioned that you had to enable the password login with the account that was created, but a hybrid AAD might require that?
+>1. Find a service account to use and know its username and password (or create one). There was nothing I had to do when the original author mentioned that you had to enable the password login with the account that was created, but a hybrid AAD might require that?
+> 1. Add the SA account to the Azure DevOps organization - I gave mine a Basic license
 > 1. Clone this GitHub repo
 > 1. Make sure you have node installed
 > 1. `cd` into the git repo and run the setup/compile commands:
