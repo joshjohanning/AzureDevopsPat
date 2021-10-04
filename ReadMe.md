@@ -8,7 +8,7 @@ Adding in my notes (@joshjohanning) from doing this
 > 
 > MSFT Public documentation: https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/manage-personal-access-tokens-via-api?view=azure-devops
 >
-> Blog post I followed: https://bw861987.medium.com/managing-azure-devops-pats-for-technical-users-via-nodejs-and-postman-6d2de9aea3a7 [ you can run in Postman to run examples, otherwise he has a NODE app you can run with examples ]
+> Blog post I followed: https://bw861987.medium.com/managing-azure-devops-pats-for-technical-users-via-nodejs-and-postman-6d2de9aea3a7 [ you can run in Postman to run examples, otherwise the author has a NODE app you can run with examples ]
 > 
 > To run the author’s app, you have to:
 >
@@ -40,7 +40,7 @@ node Code/main.js # run the app
 > ![image](https://user-images.githubusercontent.com/19912012/135923474-2c13d269-b5de-4bdb-907f-898e17b9519d.png)
 >
 > From Microsoft’s example , they have an example Python web app that you can use to look at example API calls – it uses your authentication instead of impersonating a service account.
-> ![image](https://user-images.githubusercontent.com/19912012/135922943-d6f16164-0716-4bfc-809f-05cc92815fae.png)
+> ![image](https://user-images.githubusercontent.com/19912012/135924223-fde0ed74-2bfd-42aa-a546-8119caedc5a1.png)
 > 
 
 # Automated Azure DevOps PAT management using a technical user - with no interaction from postman and nodejs
