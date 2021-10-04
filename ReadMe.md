@@ -1,3 +1,27 @@
+[](mdtoc)
+# Table of Contents
+
+* [My Notes](#my-notes)
+* [Automated Azure DevOps PAT management using a technical user - with no interaction from postman and nodejs](#automated-azure-devops-pat-management-using-a-technical-user---with-no-interaction-from-postman-and-nodejs)
+	* [What should be archived ?](#what-should-be-archived-)
+	* [Which API can I use?](#which-api-can-i-use)
+	* [Which Flow do I have to use?](#which-flow-do-i-have-to-use)
+	* [What do I have to prepare?](#what-do-i-have-to-prepare)
+* [Let's get started with Postman](#lets-get-started-with-postman)
+	* [Get an AAD Token for your technical user](#get-an-aad-token-for-your-technical-user)
+	* [Using the API of Azure DevOps](#using-the-api-of-azure-devops)
+	* [PAT scopes not mentioned in the API docs](#pat-scopes-not-mentioned-in-the-api-docs)
+* [Now moving over to typescript / nodejs](#now-moving-over-to-typescript--nodejs)
+	* [Environment](#environment)
+	* [Helper for fetch to handle our corporate proxy](#helper-for-fetch-to-handle-our-corporate-proxy)
+	* [Loading the configuration object](#loading-the-configuration-object)
+	* [Getting the required Azure AD Token](#getting-the-required-azure-ad-token)
+	* [Bringing it all together in an Azure DevopsClient](#bringing-it-all-together-in-an-azure-devopsclient)
+		* [Responses and Request objects](#responses-and-request-objects)
+	* [Let's use node to create a Pat Token](#lets-use-node-to-create-a-pat-token)
+* [Summary](#summary)
+[](/mdtoc)
+
 # My Notes
 
 Adding in my notes (@joshjohanning) from doing this
